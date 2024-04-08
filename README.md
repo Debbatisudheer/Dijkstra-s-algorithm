@@ -53,6 +53,34 @@ Usage:
     Create a graph representing the map with nodes and weighted edges.
     Use the provided functions to find and visualize the shortest path between two locations.
 
+
+This script calculates the shortest path between two locations on a map represented by a graph using Dijkstra's algorithm.
+
+Functions:
+1. dijkstra_shortest_path(graph, start, end)
+   Calculates the shortest path between two nodes in a graph.
+   Parameters:
+     - graph: A graph object representing the map with nodes and weighted edges.
+     - start: The starting node from where the shortest path should begin.
+     - end: The destination node where the shortest path should end.
+   Returns:
+     - path: A list of nodes representing the shortest path from the start node to the end node.
+     - path_length: The length or distance of the shortest path in kilometers.
+
+2. visualize_shortest_path(graph, path)
+   Visualizes the shortest path on the graph.
+   Parameters:
+     - graph: A graph object representing the map with nodes and weighted edges.
+     - path: A list of nodes representing the shortest path to visualize.
+
+Usage:
+- Create a graph object using NetworkX, representing the map with nodes and weighted edges.
+- Call the dijkstra_shortest_path function with the graph and start and end nodes to find the shortest path.
+- Call the visualize_shortest_path function to visualize the shortest path on the graph.
+
+Example:
+- In the given example, a sample graph is created with edge weights in kilometers. The shortest path from node 'A' to node 'E' is calculated and visualized on the graph.
+
 License:
 ==========
 
