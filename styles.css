@@ -1,0 +1,39 @@
+/* CSS Reset */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Default Styles */
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px; /* Adjust spacing according to your design */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Ensures image doesn't break the flow of the document */
+}
+
+/* Media Queries for Responsive Design */
+@media only screen and (min-width: 600px) {
+    /* Adjust container width and padding for larger screens */
+    .container {
+        max-width: 600px;
+        padding: 0 40px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* Additional styles for tablets */
+}
+
+@media only screen and (min-width: 992px) {
+    /* Additional styles for small desktops */
+}
+
+@media only screen and (min-width: 1200px) {
+    /* Additional styles for large desktops */
+}
