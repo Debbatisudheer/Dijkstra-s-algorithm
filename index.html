@@ -10,5 +10,26 @@
     <div class="container">
         <img src="Dijkstra's Algorithm.png" alt="Description of the image">
     </div>
+     <h2>Dijkstra's Algorithm Complexity</h2>
+    <ul>
+        <li>
+            <strong>Time Complexity:</strong>
+            <ul>
+                <li>The time complexity of Dijkstra's algorithm depends on the data structure used to implement the priority queue.</li>
+                <li>With a binary heap priority queue, the time complexity is typically O((V + E) * log(V)), where V is the number of vertices (nodes) and E is the number of edges in the graph.</li>
+                <li>The O(V + E) term accounts for the time taken to explore each vertex and edge in the graph.</li>
+                <li>The log(V) term comes from the operations involving the priority queue, such as insertion, deletion, and updating priorities.</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Space Complexity:</strong>
+            <ul>
+                <li>The space complexity of Dijkstra's algorithm primarily depends on the data structures used.</li>
+                <li>With a priority queue implementation, the space complexity is typically O(V) for storing the priority queue.</li>
+                <li>Additional space may be required for storing the graph itself, such as adjacency lists or matrices, but this is typically dwarfed by the space required for the priority queue.</li>
+            </ul>
+        </li>
+    </ul>
+    <p>In summary, Dijkstra's algorithm is an efficient way to find the shortest paths in a graph, especially for graphs with non-negative edge weights. Its time complexity is typically O((V + E) * log(V)), and its space complexity is O(V) with a binary heap priority queue implementation.</p>
 </body>
 </html>
